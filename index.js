@@ -66,10 +66,10 @@ app.get("/callback", async (req, res) => {
       ).catch(() => {});
     }
 
-    res.redirect("https://illegal-web.pages.dev/verify.html?success=1");
+    res.redirect("https://illegal-bot.pages.dev/verify.html?success=1");
   } catch (e) {
     console.error(e.response?.data || e.message);
-    res.redirect("https://illegal-web.pages.dev/verify.html?error=1");
+    res.redirect("https://illegal-bot.pages.dev/verify.html?error=1");
   }
 });
 
